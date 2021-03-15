@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+  <title>我的简历</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #eee;
+      margin: 20px 0;
+    }
+
+    article {
+      width: 21cm;
+      min-height: 29.7cm;
+      background: white;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 1em;
+    }
+  </style>
+  <style media="print">
+    body {
+      margin: 0;
+    }
+
+    .page2 {
+      /* page-break-before: always; */
+      /* margin-top: 30px; */
+    }
+  </style>
+  <style>
+    p {
+      margin: .3em 0;
+    }
+
+    h1 {
+      font-size: 25px;
+      margin-top: 0;
+    }
+
+    h4,
+    h5,
+    h6 {
+      font-weight: normal;
+    }
+
+    ol,
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    strong {
+      font-weight: normal;
+      color: #f60;
+    }
+
+    a {
+      color: #999;
+      text-decoration: none;
+      border-bottom: 1px solid;
+    }
+
+    p,
+    li {
+      color: #666;
+    }
+
+    strong {
+      font-weight: normal;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 0;
+    }
+
+    .bio {
+      position: relative;
+    }
+
+    .bio img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  </style>
+
+  <style>
+    .projects {}
+
+    .projects p {
+      color: #666;
+    }
+
+    .projects strong {
+      color: #f60;
+    }
+
+    .projects>ol {
+      margin-top: 0;
+      list-style-position: inside;
+      padding: 0;
+    }
+
+    .projects>ol>li {
+      margin-bottom: 24px;
+    }
+
+    .projects>ol>li>header {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .projects>ol>li h3 {
+      display: inline-block;
+    }
+  </style>
+  <style>
+    .skills {}
+
+    #skills {
+      width: 600px;
+      height: 300px;
+    }
+
+    @media print {
+      #skills {
+        display: none;
+      }
+    }
+
+
+    .skills>.wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .skills>.wrapper>:first-child {
+      margin-right: 24px;
+    }
+
+    .skills>.wrapper>#skills {}
+
+    .skills>.wrapper>ul {
+      color: #666;
+    }
+
+    .skills>.wrapper strong {
+      color: #f60;
+    }
+
+    .skills>.wrapper>ul>li {
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+  </style>
+  <style>
+    .openSource {}
+
+    .openSource>h2 {}
+
+    .openSource header img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    .openSource>ul {}
+
+    .openSource>ul>li {
+      margin-bottom: 24px;
+    }
+
+    .openSource header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .openSource h3 {}
+  </style>
+  <style>
+    .jobs {}
+
+    .jobs>h2 {}
+
+    .jobs>ol {}
+
+    .jobs>ol>li {
+      margin: 12px 0;
+    }
+
+    .jobs header {
+      display: flex;
+      color: #666;
+      margin-bottom: 12px;
+    }
+
+    .jobs header>h3 {
+      font-size: 18px;
+      color: #333;
+    }
+
+    .jobs header>h4 {
+      margin-left: 1em;
+      font-size: 18px;
+    }
+
+    .jobs header>span {
+      font-size: 18px;
+      margin-left: auto;
+    }
+  </style>
+
+
+  <style>
+    .comments h2 {
+      margin-block-end: 0.5em;
+    }
+  </style>
+
+
+
+  <style>
+    @media (max-width: 500px) {
+      body {
+        margin: 0;
+      }
+
+      article {
+        width: auto;
+        height: auto;
+      }
+
+      .bio img {
+        display: none;
+      }
+
+      .skills .wrapper {
+        flex-direction: column;
+      }
+
+      #skills {
+        width: auto;
+      }
+
+      .jobs header {
+        flex-direction: column;
+      }
+
+      .jobs header>h3,
+      .jobs header>h4,
+      .jobs header>span {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="bio">
+      <h1>江科研</h1>
+      <img src="https://i.loli.net/2021/03/09/u4eNdcBUg2vRmCf.jpg" alt="" height="108" width="75">
+      <p>
+        男 | 24岁 | 前端开发工程师 | 北京
+      </p>
+      <p>
+        手机：15940337017 | 微信：1029230641 | 邮箱：1029230641@qq.com
+      </p>
+    </section>
+
+
+
+
+
+
+    <section class="skills">
+      <h2>技能</h2>
+      <div class="wrapper">
+        <div id="skills"></div>
+        <ul>
+          <li>掌握HTML5/CSS3，熟悉传统布局、flex布局、grid布局、移动端适配等，能将设计稿<strong>完美还原</strong> </li>
+          <li>了解<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie等</li>
+          <li>熟悉 <strong>Vue全家桶</strong>的使用，包括 VueCli、VueRouter、Vuex 等</li>
+          <li>了解 React的基本使用</li>
+          <li>熟悉 ES6，包括 let / Promise / await / 析构赋值等</li>
+          <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
+          <li>了解 <strong>Webpack</strong> 的配置</li>
+        </ul>
+      </div>
+    </section>
+
+
+
+    <section class="openSource">
+      <h2>开源项目</h2>
+      <ul>
+        <li>
+          <header>
+            <h3>前端导航网站</h3>
+            <span>
+              <a href="https://github.com/quasar1533/nav-demo-1">源码链接</a>
+              <a href="http://bd1533.top/nav-demo-1/dist/index.html">点击预览</a>
+            </span>
+          </header>
+          <p>
+          <ul>
+            <li>
+              使用JQuery制作的简易导航网站，使用了事件委托、JSON、浏览器
+            </li>
+            <li>
+              localStorage等功能
+            </li>
+          </ul>
+          </p>
+        </li>
+        <li class="page2">
+          <header>
+            <h3>会动的皮卡丘</h3>
+            <span>
+              <a href="https://github.com/quasar1533/css-drawing-player-1">源码链接</a>
+              <a href="http://bd1533.top/css-drawing-player-1/dist/index.html">点击预览</a>
+            </span>
+          </header>
+          <p>使用<strong>CSS3与动画</strong>制作的一个小作品，并添加JS使其可以播放起来</p>
+        </li>
+        <li>
+          <header>
+            <h3>vue手机记账app</h3>
+            <span>
+              <a href="https://github.com/quasar1533/vue-morney-1">源码链接</a>
+              <a href="#">项目预览</a>
+            </span>
+          </header>
+          <p>
+          <ul>
+            <li>使用Vue+typescript开发的一款线上手机端记账app</li>
+            <li>可以实现记账，增删记录，可视化图标等基本功能</li>
+            <li>使用<strong>Vue2</strong>+<strong>VueRouter</strong>+<strong>Vuex</strong>技术栈进行开发，使用本地localStorage作为数据库
+            </li>
+          </ul>
+          </p>
+        </li>
+      </ul>
+    </section>
+
+
+
+    <section class="education">
+      <h2>教育情况</h2>
+      <p>
+        <span><time>2015</time>
+          <time>~</time>
+          <time>2019</time> 沈阳化工大学 能源与动力工程学院 本科</span>
+      </p>
+      <p>
+        英语等级：CET6 502
+      </p>
+    </section>
+
+
+
+
+    <section class="others">
+      <h2>其他链接</h2>
+      <ul>
+        <li><a href="https://www.yuque.com/bd1533?tab=books">我的博客</a> 对学习与工作的总结与记录</li>
+        <li><a href="https://github.com/quasar1533">我的Github</a> 过去一年有230次提交</li>
+      </ul>
+    </section>
+
+
+
+
+    <section class="jobs">
+      <h2>工作经历</h2>
+      <ol>
+        <li>
+          <header>
+            <h3> 南通华信中央空调 </h3>
+            <h4>三维绘图、技术支持</h4>
+            <span><time>2019年12月</time>~<time>2021年1月</time></span>
+          </header>
+          <ul>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+
+
+    <section class="comments">
+      <h2>个人评价</h2>
+      <ol>
+        <li>热爱学习，热爱新技术、喜欢承担具有技术难度的工作</li>
+      </ol>
+    </section>
+
+
+
+
+  </article>
+  <script src="https://cdn.bootcss.com/echarts/5.0.1/echarts.min.js"></script>
+  <script src="./main.js"></script>
+</body>
+
+</html>
